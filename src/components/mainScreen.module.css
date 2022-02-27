@@ -1,0 +1,35 @@
+.main_screen
+{
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding:24px;
+    width: 998px;
+    height:836px;
+    background:rgba(41, 41, 48, 1);
+    overflow-y: scroll;
+}
+/* Размеры скроллбара */
+.main_screen::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Трек поле скроллбара */
+.main_screen::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: #000;
+}
+
+/* Ползунок скроллбара */
+.main_screen::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: rgba(245, 245, 245, 0.08);
+    border: 4px solid rgba(245, 245, 245, 0.08);
+    border-radius: 8px;
+}
+.cardContent{
+    margin:8px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

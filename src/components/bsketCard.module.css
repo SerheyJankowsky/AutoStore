@@ -1,0 +1,84 @@
+.card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 312px;
+    max-height: 74px;
+    background: #303038;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top:4px ;
+    transform: scale(1);
+    animation: card 0.5s ease-in;
+}
+
+@keyframes  card{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+.card img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 58px;
+}
+.info{
+    margin-left: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.info h3{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F5F5F5;
+}
+.info p{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #EFB62B;
+}
+.total{
+    width: 48px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #292930;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9C9CB0;
+}
+.delete{
+    width: 32px;
+    height: 32px;
+    margin-left: 3px;
+    background: #292930;
+    border-radius: 8px;
+    border:none;
+    color: #9C9CB0;
+    transition: color 0.5s ;
+}
+.delete:hover{
+    color: red;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.action{
+    position: fixed;
+    left: 70%;
+    display: flex;
+    align-items: center;
+}

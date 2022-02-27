@@ -1,0 +1,75 @@
+.basket{
+    width: 360px;
+    height: 836px;
+    display: flex;
+    flex-direction: column;
+    background: #292930;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    margin-left: 11px;
+    padding:24px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.basket p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #777780;
+}
+.bye{
+    margin-top: 5px;
+    padding: 12px 8px;
+    background: #303038;
+    border-radius: 8px;
+    max-width: 312px;
+    max-height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    animation: bye 0.5s ease-in-out;
+}
+@keyframes bye {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.total{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total h5{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F5F5F5;
+}
+.total p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #EFB62B;
+}
+.basket::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Трек поле скроллбара */
+.basket::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: #000;
+}
+
+/* Ползунок скроллбара */
+.basket::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: rgba(245, 245, 245, 0.08);
+    border: 4px solid rgba(245, 245, 245, 0.08);
+    border-radius: 8px;
+}
